@@ -627,7 +627,10 @@
 
         /* --- CTA FINAL --- */
         .cta-final {
-            background: linear-gradient(rgba(96, 108, 56, 0.85), rgba(96, 108, 56, 0.85)), url('https://picsum.photos/seed/flowersfield/1920/600');
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.55),
+                rgba(0, 0, 0, 0.55)
+            ), url('images/footer.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
