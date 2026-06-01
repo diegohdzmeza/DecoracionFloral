@@ -1,13 +1,13 @@
         /* --- VARIABLES DE DISEÑO --- */
         :root {
-            --color-primary: #D4A373; /* Beige/Dorado suave */
-            --color-secondary: #BC6C25; /* Tono tierra/cobre para acentos */
-            --color-accent: #E9EDC9; /* Verde pálido muy suave */
-            --color-green: #606C38; /* Verde natural elegante */
-            --color-bg-light: #FAFAFA; /* Blanco roto */
-            --color-bg-white: #FFFFFF;
-            --color-text-dark: #2F3E46; /* Gris oscuro casi negro */
-            --color-text-light: #6C757D;
+            --color-primary: #c5007c;
+            --color-secondary: #8a8a8a;
+            --color-accent: #f3f3f3;
+            --color-green: #c5007c;
+            --color-bg-light: #f8f8f8;
+            --color-bg-white: #ffffff;
+            --color-text-dark: #4a4a4a;
+            --color-text-light: #777777;
             --color-white: #FFFFFF;
             
             --font-heading: 'Playfair Display', serif;
@@ -734,6 +734,65 @@
             transform: translateY(0);
         }
 
+        /* --- COTIZACIÓN --- */
+        .quote-section {
+            background-color: var(--color-bg-white);
+        }
+
+        .quote-wrapper {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .quote-text p {
+            color: var(--color-text-light);
+            font-size: 1.05rem;
+            margin-top: 10px;
+        }
+
+        .quote-form {
+            background: var(--color-bg-light);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--color-text-dark);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid rgba(0,0,0,0.12);
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            background-color: white;
+            color: var(--color-text-dark);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .quote-form .btn {
+            width: 100%;
+            border: none;
+        }
+
+
         /* --- MEDIA QUERIES --- */
         @media (max-width: 992px) {
             .hero h1 { font-size: 2.8rem; }
@@ -775,5 +834,14 @@
 
             .gallery-item {
                 height: 280px;
+            }
+
+            .quote-wrapper {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .quote-form {
+                padding: 30px 22px;
             }
         }
