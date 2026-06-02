@@ -126,16 +126,25 @@
             background-color: var(--color-green);
             color: var(--color-white);
         }
-        
+
         .btn-secondary {
             background-color: transparent;
             border-color: var(--color-white);
             color: var(--color-white);
         }
 
-        .btn-secondary:hover {
-            background-color: var(--color-white);
-            color: var(--color-text-dark);
+        @media (hover: hover) {
+            .btn-secondary:hover {
+                background-color: var(--color-white);
+                color: var(--color-text-dark);
+            }
+        }
+
+        .btn-secondary:focus,
+        .btn-secondary:active {
+            background-color: transparent;
+            color: var(--color-white);
+            border-color: var(--color-white);
         }
 
         .btn-outline-dark {
