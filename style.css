@@ -840,4 +840,15 @@
                 padding: 14px 20px;
                 font-size: 0.8rem;
             }
+
+            .hero {
+                background:
+                    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                    url('images/hero-mobile.jpg');
+
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+            }
         }
